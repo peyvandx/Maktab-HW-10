@@ -8,14 +8,14 @@
 
 body {
     font-family: "Noto Sans Arabic";
-    background-color: rgb(242, 242, 229);
+    background-color: #fdfafa;
 }
 
 .nav {
     position: fixed;
     height: 600px;
     width: 250px;
-    background-color: aquamarine;
+    background-color: #f3eaf0;
     overflow-x: auto;
     text-align: center;
 }
@@ -27,10 +27,12 @@ div.nav-item {
     align-items: center;
 }
 
+.nav-item:hover {
+    background-color: #ffffff;
+}
+
 .card {
-    position: absolute;
-    top: 5px;
-    right: 255px;
+    margin: 10px;
     width: 200px;
     height: auto;
     border: solid;
@@ -38,19 +40,52 @@ div.nav-item {
     border-color: bisque;
     box-shadow: 3px 3px 3px rgb(83, 82, 80);
     text-align: center;
-    background-color: rgb(244, 221, 192);
+    background-color: #F9E8D9;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px rgb(83, 82, 80);
+    border-color: #FF9B50;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #333130;
+    font-weight: 400;
 }
 
 .card-img {
     height: 180px;
     object-fit: cover;
+    padding-top: 5px;
 }
 
 .card-description {
     font-size: 15px;
+    font-weight: 400;
 }
 
 .card-price {
     font-size: 18px;
+    font-weight: 500;
+    color: rgb(62, 57, 57);
 }
 
+span {
+    font-size: 15px;
+    color: rgb(62, 57, 57);
+}
+
+a {
+    color: #333130;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cards-list {
+    position: absolute;
+    right: 310px;
+    top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
