@@ -1,7 +1,56 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Noto Sans Arabic";
+    background-color: rgb(242, 242, 229);
+}
+
+.nav {
+    position: fixed;
+    height: 600px;
+    width: 250px;
+    background-color: aquamarine;
+    overflow-x: auto;
+    text-align: center;
+}
+
+div.nav-item {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: absolute;
+    top: 5px;
+    right: 255px;
+    width: 200px;
+    height: auto;
+    border: solid;
+    border-radius: 20px;
+    border-color: bisque;
+    box-shadow: 3px 3px 3px rgb(83, 82, 80);
+    text-align: center;
+    background-color: rgb(244, 221, 192);
+}
+
+.card-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-description {
+    font-size: 15px;
+}
+
+.card-price {
+    font-size: 18px;
 }
 
