@@ -5,3 +5,17 @@ body {
     font-family: "Noto Sans Arabic";
 }
 
+.nav {
+    height: 600px;
+    width: 250px;
+    background-color: aquamarine;
+    overflow-x: auto;
+    text-align: center;
+}
+
+div.nav-item {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
