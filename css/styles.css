@@ -16,7 +16,8 @@ body {
     height: 600px;
     width: 250px;
     background-color: #f3eaf0;
-    overflow-x: auto;
+    /* overflow-x: auto; */
+    overflow-y: auto;
     text-align: center;
 }
 
@@ -31,21 +32,35 @@ div.nav-item {
     background-color: #ffffff;
 }
 
+.cards-list {
+    position: absolute;
+    right: 310px;
+    top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+    /* align-self: auto; */
+    align-items: flex-start;
+
+}
+
 .card {
     margin: 10px;
     width: 200px;
-    height: auto;
+    /* height: auto; */
     border: solid;
     border-radius: 20px;
     border-color: bisque;
     box-shadow: 3px 3px 3px rgb(83, 82, 80);
     text-align: center;
+    word-wrap: break-word;
     background-color: #F9E8D9;
 }
 
 .card:hover {
     box-shadow: 5px 5px 5px rgb(83, 82, 80);
     border-color: #FF9B50;
+    cursor: pointer;
 }
 
 .card-title {
@@ -60,9 +75,10 @@ div.nav-item {
     padding-top: 5px;
 }
 
-.card-description {
+p.card-description {
     font-size: 15px;
     font-weight: 400;
+    padding: 10px
 }
 
 .card-price {
@@ -80,12 +96,4 @@ a {
     color: #333130;
     font-size: 18px;
     font-weight: 500;
-}
-
-.cards-list {
-    position: absolute;
-    right: 310px;
-    top: 5px;
-    display: flex;
-    flex-wrap: wrap;
 }
